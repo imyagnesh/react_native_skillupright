@@ -49,25 +49,25 @@ const users = [
 //       [30-39]: []
 //   }
 
-  const updatedUser = users.map(item => {
-      if(item.name === 'priyanka') {
-          return {...item, age: 32}
-      }
-      return item;
-  });
+  // const updatedUser = users.map(item => {
+  //     if(item.name === 'priyanka') {
+  //         return {...item, age: 32}
+  //     }
+  //     return item;
+  // });
 
-  console.log(updatedUser);
+  // console.log(updatedUser);
 
 
 // const isExist = users.any(item => {
 //     return item.name === 'virat';
 // });
 
-const isEvery = users.every(item => {
-    return item.age > 20;
-});
+// const isEvery = users.every(item => {
+//     return item.age > 20;
+// });
 
-console.log(isEvery);
+// console.log(isEvery);
 
 // console.log(isExist);
 

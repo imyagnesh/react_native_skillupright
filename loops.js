@@ -210,3 +210,15 @@ for (const [key, value] of Object.entries(obj)) {
     console.log(key);
     console.log(value);
 }
+
+
+const groupByAge = users.reduce((acc,item) => {
+  const ageGroup = Math.floor(item.age / 10);
+  const key = `[${ageGroup}0-${ageGroup}9]`;
+  if(acc[key] === undefined) {
+      acc[key] = [item]
+  } else {
+      acc[key].push(item);
+  }
+  return acc;
+}, {});
